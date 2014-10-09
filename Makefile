@@ -1,4 +1,4 @@
-CFLAGS := $(CFLAGS) -std=c99 -w
+CFLAGS := $(CFLAGS) -std=c99 
 
 shell: main.c exec.o shellparser.o shellscanner.o
 	$(CC) -o shell main.c exec.o shellparser.o shellscanner.o
