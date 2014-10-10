@@ -29,19 +29,6 @@ typedef struct job
   int foreground;
 } job;
 
-typedef struct command
-{
-	char** arg;
-	char* infile;
-	char* outfile;
-} command;
-
-typedef struct command_line
-{
-	int valid;
-	command** pipline;
-} command_line;
-
 void print_process (process*);
 
 process* create_process ();
